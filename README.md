@@ -4,7 +4,7 @@ Três páginas independentes, em HTML/CSS/JavaScript sem build: `index.html` apr
 
 ## Objetivo da versão minimalista
 
-Os cartões chegam ao visitante por NFC, QR Code ou link. A tela inicial prioriza fotografia, nome e três ações: WhatsApp, Salvar contato e Compartilhar. O Consultivo acrescenta um único bloco sobre o atendimento. O restante é conteúdo do material comercial, não do cartão.
+Os cartões chegam ao visitante por NFC, QR Code ou link. A tela inicial prioriza fotografia, nome e três ações: WhatsApp, Salvar contato e Compartilhar. O Consultivo acrescenta seleção de interesse, mensagem contextualizada para WhatsApp, FAQ recolhido e links de material de consulta verificados. O restante é conteúdo do material comercial, não do cartão.
 
 ## Configuração antes da entrega
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f4ee">
-  <meta name="description" content="Mariana Alves, consultora de consórcios da Órbita. Conheça seu atendimento e contatos profissionais.">
+  <meta name="description" content="Mariana Alves, consultora de consórcios. Conheça as modalidades e fale sobre o plano do seu interesse.">
   <title>Mariana Alves | Órbita Consórcios</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mariana Alves | Órbita Consórcios">
@@ -24,7 +24,7 @@
     <section class="profile-identity">
       <p class="role">Consultora de consórcios</p>
       <h1 id="profile-name">Mariana Alves</h1>
-      <p class="description">Explico as modalidades de consórcio e as condições dos planos para você avaliar suas possibilidades.</p>
+      <p class="description">Posso orientar você sobre modalidades de consórcio, condições dos planos e etapas de contratação.</p>
     </section>
     <div class="actions" aria-label="Ações do cartão">
       <button type="button" class="primary-action" data-action="whatsapp">
@@ -37,9 +37,39 @@
         <button type="button" data-action="share"><img src="assets/icons/share-2.svg" alt="">Compartilhar</button>
       </div>
     </div>
-    <section class="consult-info">
-      <h2>Como posso ajudar?</h2>
-      <p>Consórcios de imóveis, veículos e serviços. Conversamos sobre seu objetivo, as alternativas disponíveis e as condições de contratação.</p>
+    <section class="interest-picker" aria-labelledby="interest-title">
+      <h2 id="interest-title">Qual consórcio você procura?</h2>
+      <p>Escolha uma opção para iniciar a conversa com o assunto definido.</p>
+      <div class="interest-options" role="group" aria-label="Tipo de consórcio">
+        <button type="button" data-interest="imoveis" aria-pressed="false"><img src="assets/icons/house.svg" alt="">Imóveis</button>
+        <button type="button" data-interest="veiculos" aria-pressed="false"><img src="assets/icons/car-front.svg" alt="">Veículos</button>
+        <button type="button" data-interest="servicos" aria-pressed="false"><img src="assets/icons/wrench.svg" alt="">Serviços</button>
+      </div>
+      <p class="interest-summary" id="interest-summary" aria-live="polite">Selecione uma modalidade para preparar sua mensagem.</p>
+      <button type="button" class="interest-cta" data-action="quote" disabled>Escolha uma modalidade</button>
+      <p class="interest-disclaimer">A disponibilidade e as condições de cada plano são confirmadas no atendimento.</p>
+    </section>
+    <section class="premium-details" aria-label="Mais informações sobre o atendimento">
+      <details>
+        <summary>Perguntas frequentes <span aria-hidden="true">+</span></summary>
+        <div class="accordion-body">
+          <h3>O que é a contemplação?</h3>
+          <p>É a atribuição do crédito ao consorciado, conforme as regras do grupo. Pode ocorrer por sorteio ou lance.</p>
+          <h3>Existe garantia de contemplação imediata?</h3>
+          <p>Não. Não é possível garantir a contemplação em uma data específica.</p>
+          <h3>Quais taxas preciso verificar?</h3>
+          <p>O contrato informa a taxa de administração e outras cobranças previstas, como fundo de reserva e seguro, quando aplicáveis.</p>
+          <a href="https://www.bcb.gov.br/meubc/faqs/s/consorcio" target="_blank" rel="noopener noreferrer">Fonte: perguntas frequentes do Banco Central ↗</a>
+        </div>
+      </details>
+      <details>
+        <summary>Materiais para consulta <span aria-hidden="true">+</span></summary>
+        <div class="accordion-body">
+          <p>Antes de contratar, conheça o funcionamento do consórcio e os cuidados recomendados.</p>
+          <a href="https://www.bcb.gov.br/estabilidadefinanceira/administradoraconsorcio" target="_blank" rel="noopener noreferrer">Entenda como funciona o consórcio ↗</a>
+          <a href="https://www.bcb.gov.br/meubc/faqs/p/quais-os-cuidados-devo-tomar-antes-de-aderir-a-um-grupo-de-consorcio" target="_blank" rel="noopener noreferrer">Cuidados antes de contratar ↗</a>
+        </div>
+      </details>
     </section>
     <footer class="profile-foot">Órbita Consórcios <span>Cartão digital</span></footer>
   </main>
