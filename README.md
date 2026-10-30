@@ -1,18 +1,17 @@
-# Cartões digitais Órbita
+# Órbita — cartões digitais NFC
 
-Aplicação web estática e responsiva, com dois estilos de perfil profissional para equipes comerciais de consórcios.
+Três páginas estáticas: index.html (apresentação da solução), rafael-martins.html (perfil essencial) e mariana-alves.html (perfil consultivo).
 
-## Perfis
-- `rafael-martins.html`: perfil essencial, objetivo e focado em contato.
-- `mariana-alves.html`: perfil consultivo com áreas de atuação e etapas de atendimento.
+## Configuração para cliente
+Os nomes e a marca são fictícios e as fotografias são de banco de imagens. Substituir todos pelos dados autorizados antes da entrega.
 
-## Configuração de atendimento
-Os nomes, a marca e as fotos são referências para a apresentação comercial. Antes de ativar os canais de atendimento, substitua os dados de `PROFILES` em `app.js` pelos números de telefone autorizados, no formato internacional sem sinais (exemplo: 5567999999999).
+Editar as entradas em `PROFILES` no arquivo `app.js`, incluindo telefone no formato internacional (exemplo: 5567999999999). Sem número configurado, o botão de WhatsApp informa que o canal ainda não foi habilitado. O botão Salvar contato gera um arquivo vCard, e Compartilhar usa o recurso do navegador ou copia o endereço.
 
-Os botões de compartilhamento e vCard funcionam. O botão do WhatsApp depende de configuração do número de cada consultor. Não inserir um número real sem aprovação.
+## Tecnologia
+HTML, CSS e JavaScript sem dependências de build. Links individuais acessíveis por NFC, QR Code ou mensagem. `visual-2026.css` contém o layout editorial atual; `styles.css` conserva os componentes compartilhados e o histórico visual.
 
-## Licenças e imagens
-Retratos de referência provenientes de Pexels, obtidos em resolução 2400 pixels, licenciados para uso comercial sob os termos da Pexels. Os retratos representam modelos fotográficos e não os profissionais nomeados no material; na implantação, devem ser substituídos por fotografias autorizadas dos consultores. Fontes externas: Google Fonts (DM Sans, DM Mono, Playfair Display). Pictogramas SVG locais com traços de interface; o ícone de motocicletas segue a geometria do Tabler Icons (licença MIT).
+## Referências e revisão
+Veja `REFERENCIAS_VISUAIS.md` com fontes pesquisadas e justificativas das escolhas de UI.
 
-## Hospedagem
-GitHub Pages. Requer HTTPS para Web Share API e Clipboard API. O compartilhamento por NFC exige tag compatível gravada com uma das URLs do site.
+## Imagens e licenças
+Retratos obtidos da Pexels (2400px) usados como referências; os modelos fotografados não correspondem aos personagens dos cartões. Na entrega, substituir por fotografias autorizadas. Fontes do Google Fonts: DM Sans, DM Mono e Playfair Display. Ícones SVG locais e um ícone de moto baseado no Tabler Icons (licença MIT).
