@@ -1,17 +1,27 @@
-# Órbita — cartões digitais NFC
+# Cartões digitais — Órbita Consórcios
 
-Três páginas estáticas: index.html (apresentação da solução), rafael-martins.html (perfil essencial) e mariana-alves.html (perfil consultivo).
+Três páginas independentes, em HTML/CSS/JavaScript sem build: `index.html` apresenta os dois modelos, `rafael-martins.html` é o Essencial e `mariana-alves.html` é o Consultivo.
 
-## Configuração para cliente
-Os nomes e a marca são fictícios e as fotografias são de banco de imagens. Substituir todos pelos dados autorizados antes da entrega.
+## Objetivo da versão minimalista
 
-Editar as entradas em `PROFILES` no arquivo `app.js`, incluindo telefone no formato internacional (exemplo: 5567999999999). Sem número configurado, o botão de WhatsApp informa que o canal ainda não foi habilitado. O botão Salvar contato gera um arquivo vCard, e Compartilhar usa o recurso do navegador ou copia o endereço.
+Os cartões chegam ao visitante por NFC, QR Code ou link. A tela inicial prioriza fotografia, nome e três ações: WhatsApp, Salvar contato e Compartilhar. O Consultivo acrescenta um único bloco sobre o atendimento. O restante é conteúdo do material comercial, não do cartão.
 
-## Tecnologia
-HTML, CSS e JavaScript sem dependências de build. Links individuais acessíveis por NFC, QR Code ou mensagem. `visual-2026.css` contém o layout editorial atual; `styles.css` conserva os componentes compartilhados e o histórico visual.
+## Configuração antes da entrega
 
-## Referências e revisão
-Veja `REFERENCIAS_VISUAIS.md` com fontes pesquisadas e justificativas das escolhas de UI.
+Os nomes, a marca e as fotos são ilustrativos. Em `app.js`, substitua as informações de `PROFILES` pelos contatos reais, autorizados, no formato internacional sem pontuação (ex.: 5567999999999). Enquanto não existe número, o botão do WhatsApp informa que o canal não foi configurado. O vCard inclui os dados disponíveis e o link do perfil; não adiciona telefone inexistente.
 
-## Imagens e licenças
-Retratos obtidos da Pexels (2400px) usados como referências; os modelos fotografados não correspondem aos personagens dos cartões. Na entrega, substituir por fotografias autorizadas. Fontes do Google Fonts: DM Sans, DM Mono e Playfair Display. Ícones SVG locais e um ícone de moto baseado no Tabler Icons (licença MIT).
+## Estrutura
+
+- `index.html`: escolha entre os dois cartões
+- `rafael-martins.html`: perfil objetivo
+- `mariana-alves.html`: perfil consultivo
+- `styles.css`: estilos dos três layouts e responsividade
+- `app.js`: vCard, compartilhamento e WhatsApp
+- `assets/`: fotografias e SVGs locais
+- `PESQUISA_MINIMALISMO.md`: referências e princípios usados
+
+Os perfis permanecem acessíveis pelos endereços públicos existentes. Não é necessário mudar os links dos materiais comerciais.
+
+## Fontes de recursos
+
+Fotografias de referência da Pexels (2400 px); os modelos fotográficos não são os consultores nomeados e devem ser substituídos. Fontes DM Sans e Newsreader servidas pelo Google Fonts. SVGs locais; ícone de motocicleta baseado em Tabler Icons (MIT).
