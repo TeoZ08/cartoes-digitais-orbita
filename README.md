@@ -1,29 +1,18 @@
-# Protótipos NFC para equipe de consórcios
+# Cartões digitais Órbita
 
-Projeto demonstrativo (HTML/CSS/JavaScript sem dependências externas) preparado para GitHub Pages e Vercel.
+Aplicação web estática e responsiva, com dois estilos de perfil profissional para equipes comerciais de consórcios.
 
-## Arquivos
-- `index.html`: página inicial para comparar dois modelos.
-- `demo-essencial.html`: cartão do consultor Rafael Martins.
-- `demo-consultivo.html`: miniportfólio da consultora Mariana Alves.
-- `styles.css` e `app.js`: estilos e funcionalidades.
-- `assets/`: imagens ilustrativas de pessoas geradas artificialmente.
+## Perfis
+- `rafael-martins.html`: perfil essencial, objetivo e focado em contato.
+- `mariana-alves.html`: perfil consultivo com áreas de atuação e etapas de atendimento.
 
-## Teste local
-Na pasta `site`, execute `python3 -m http.server 8080` e acesse `http://localhost:8080`.
+## Configuração de atendimento
+Os nomes, a marca e as fotos são referências para a apresentação comercial. Antes de ativar os canais de atendimento, substitua os dados de `PROFILES` em `app.js` pelos números de telefone autorizados, no formato internacional sem sinais (exemplo: 5567999999999).
 
-## Publicação
-**GitHub Pages**: publicar o conteúdo da pasta `site` na raiz do branch de distribuição. Links relativos permitem subdiretórios de repositório.
+Os botões de compartilhamento e vCard funcionam. O botão do WhatsApp depende de configuração do número de cada consultor. Não inserir um número real sem aprovação.
 
-**Vercel**: importar o repositório com `site` como Root Directory e Framework Preset `Other` (sem build obrigatório), ou publicar os arquivos estáticos conforme a configuração do projeto.
+## Licenças e imagens
+Retratos de referência provenientes de Pexels, obtidos em resolução 2400 pixels, licenciados para uso comercial sob os termos da Pexels. Os retratos representam modelos fotográficos e não os profissionais nomeados no material; na implantação, devem ser substituídos por fotografias autorizadas dos consultores. Fontes externas: Google Fonts (DM Sans, DM Mono, Playfair Display). Pictogramas SVG locais com traços de interface.
 
-## NFC
-Depois que o endereço final estiver publicado, gravar a URL individual de cada perfil em uma tag NFC NTAG213/215/216 usando um app de gravação; testar em Android e iPhone compatíveis. A aproximação pode exibir uma notificação que o usuário toca para abrir o link. Um QR Code poderá usar a mesma URL.
-
-## Limites e segurança
-- Perfis, nomes, fotos e marca **fictícios**.
-- Botões de contato e simulação abrem avisos ilustrativos; não enviam mensagens ou dados.
-- Botões de compartilhar e salvar vCard funcionam, observadas permissões e limitações do navegador.
-- Não incluir dados reais de clientes, promessas de contemplação ou condições financeiras não verificadas.
-- Para produção, configurar números oficiais, dados autorizados pela empresa e política de privacidade, caso haja formulários de coleta.
-- Google Fonts é opcional; CSS possui fallback.
+## Hospedagem
+GitHub Pages. Requer HTTPS para Web Share API e Clipboard API. O compartilhamento por NFC exige tag compatível gravada com uma das URLs do site.
